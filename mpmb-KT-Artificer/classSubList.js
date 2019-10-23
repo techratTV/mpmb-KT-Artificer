@@ -12,16 +12,20 @@
 	Effect:		This is the syntax for adding a new subclass/archetype to a class that is defined in the sheet, or to a class you made yourself
 	Sheet:		v12.999 (2017-11-29)
 */
-
-var iFileName = "Homebrew Syntax - ClassSubList.js"; // Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. Only the first occurrence of this variable will be used
+// Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. 
+// Only the first occurrence of this variable will be used
+var iFileName = "KibblesTasty - ClassSubList.js"; 
 RequiredSheetVersion(12.999); // Optional; This is the minimum required version number of the sheet for the script to work. If the sheet being used to import the script is of an earlier version, the user will be warned
 
-AddSubClass( // this is the function you will be calling to add the variant
+// this is the function you will be calling to add the variant
+AddSubClass( 
+	// Parent Class object name; Required; This has to be the exact name of the class of which you are adding a subclass. 
+	// Look for the name of the class in the ClassList variable. For the default 12 classes these names are:
+	// "barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", and "wizard"
+	"fighter", 
+	 // Object name; Required; The name the entry in the ClassSubList will have. This can be anything, it is just something that the sheet uses to reference the new entry and it will never be printed anywhere
 
-	"fighter", // Parent Class object name; Required; This has to be the exact name of the class of which you are adding a subclass. Look for the name of the class in the ClassList variable. For the default 12 classes these names are: "barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", and "wizard"
-
-	"specialme", // Object name; Required; The name the entry in the ClassSubList will have. This can be anything, it is just something that the sheet uses to reference the new entry and it will never be printed anywhere
-
+	"specialme",
 	{ // don't forget this opening bracket
 
 		regExpSearch : /^(?=.*special)(?=.*me).*$/i, //required; regular expression of what to look for (i.e. now it looks for any entry that has both the words "special" and "me" in it, disregarding capitalization). If this looks too complicated, just write: /specialme/i
@@ -40,8 +44,12 @@ AddSubClass( // this is the function you will be calling to add the variant
 		spellcastingFactor : 2, //overwrites the spellcastingFactor that was defined in the ClassList
 
 		features : { //unlike the other entries, "features" will not delete all the features from the ClassList, but will add to the features in the ClassList. For this to work properly, the feature object has to be named "subclassfeatureX" and not something appropriate for the feature. The below are the features of the purple Dragon Knight
+ // has to start with "subclassfeature" followed by a number. 
+ // Note that the name has to be unique for this subclass, but it can be the same name as one of the features 
+ // of the class in the ClassList variable. If you use the same name as a feature in the ClassList variable,
+ // it will be overwritten with this entry
 
-			"subclassfeature3" : { // has to start with "subclassfeature" followed by a number. Note that the name has to be unique for this subclass, but it can be the same name as one of the features of the class in the ClassList variable. If you use the same name as a feature in the ClassList variable, it will be overwritten with this entry
+			"subclassfeature3" : {
 				name : "Rallying Cry",
 				source : ["S", 128],
 				minlevel : 3,
@@ -73,3 +81,4 @@ AddSubClass( // this is the function you will be calling to add the variant
 			},
 		}
 	}
+)

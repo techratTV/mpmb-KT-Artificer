@@ -16,10 +16,16 @@
 */
 
 var iFileName = "Homebrew Syntax - SpellTable.js"; // Optional; This is how the file will be named in the sheet if you import it as a file and not copy-paste its content. Only the first occurrence of this variable will be used
-RequiredSheetVersion(12.999); // Optional; This is the minimum required version number of the sheet for the script to work. If the sheet being used to import the script is of an earlier version, the user will be warned
+RequiredSheetVersion(12.999); 
+// Optional; This is the minimum required version number of the sheet for the script to work. If the sheet being used to import the script is of an earlier version, the user will be warned
 
-purplemancerSpellTable = [ //Object name; note that there is no "var" here, and that the name of this variable is the name of the spellcastingFactor without any numbers in it and all lower case, plus the text "SpellTable"
-	[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 0 // this should be all zeroes
+
+// Object name; note that there is no "var" here, 
+// and that the name of this variable is the name of the spellcastingFactor without any numbers
+// in it and all lower case, plus the text "SpellTable"
+ //lvl 0 // this should be all zeroes
+ktartificerSpellTable = [ 
+	[0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 1 // there are 9 entries in each array, one for each spell level
 	[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 2
 	[1, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 3

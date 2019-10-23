@@ -80,7 +80,7 @@ SpellsList["arcane weapon"] = {
 	duration : "Concentration, up to 1 hour", 
 	description : "You touch a weapon and imbue it with magic. For the duration the weapon counts as a magical weapon, any damage dealt by it is Force damage.",
 	descriptionMetric : "You touch a weapon and imbue it with magic. For the duration the weapon counts as a magical weapon, any damage dealt by it is Force damage.", 
-	descriptionFull : "You touch a weapon and imbue it with magic. For the duration the weapon counts as a magical weapon, any damage dealt by it is Force damage."
+	descriptionFull : "You touch a weapon and imbue it with magic. For the duration the weapon counts as a magical weapon, any damage dealt by it is Force damage.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
@@ -99,7 +99,7 @@ SpellsList["bond item"] = {
 	save : "Cha",  
 	description : "Touch an Item less than 100 lbs, until spell ends you can recall the item as a bonus action,Charisma save if some one is in possession of item.",
 	descriptionMetric : "Touch an Item less than 100 lbs, until spell ends you can recall the item as a bonus action,Charisma save if some one is in possession of item.", 
-	descriptionFull : "You touch a item weighing no more than 100 pounds and form a link between you and it. Until the spell ends, you can recall it to your hand as a bonus action."+"\n" + "If another creature is holding or wearing the item when you try to recall it, they make a Charisma saving throw, and if they succeed, the spell fails. They make this save with advantage if they have had possession of the item for more than 1 minute."
+	descriptionFull : "You touch a item weighing no more than 100 pounds and form a link between you and it. Until the spell ends, you can recall it to your hand as a bonus action."+"\n" + "If another creature is holding or wearing the item when you try to recall it, they make a Charisma saving throw, and if they succeed, the spell fails. They make this save with advantage if they have had possession of the item for more than 1 minute.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
@@ -116,7 +116,7 @@ SpellsList["fall"] = {
 	duration : "Instantaneous", 
 	description : "You fall in the direction you choose for 1 turn(500 feet) or until you hit an object. You do take falling damage as normal",
 	descriptionMetric : "You fall in the direction you choose for 1 turn(500 feet) or until you hit an object. You do take falling damage as normal", 
-	descriptionFull : "You alter gravity for yourself, causing you to reorient which way is down for you until the end of your turn. You can pick any direction to fall as if under the effect of gravity, falling up to 500 feet before the spell ends." +"\n" + "If you collide with something during this time, you take falling damage as normal, but you can control your fall as you could under normal conditions by holding onto objects or move along a surface according to your new orientation as normal until your turn ends and gravity returns to normal."
+	descriptionFull : "You alter gravity for yourself, causing you to reorient which way is down for you until the end of your turn. You can pick any direction to fall as if under the effect of gravity, falling up to 500 feet before the spell ends." +"\n" + "If you collide with something during this time, you take falling damage as normal, but you can control your fall as you could under normal conditions by holding onto objects or move along a surface according to your new orientation as normal until your turn ends and gravity returns to normal.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
@@ -133,7 +133,7 @@ SpellsList["seeking projectile"] = {
 	duration : "Concentration, up to 10 minutes", 
 	description : "A piece of ammo or thrown weapon you touch, add your spellcasing modifier to the dice roll, if the new roll is over 20 is a crit. Spell ends after an attack is made with the projectile.",
 	descriptionMetric : "A piece of ammo or thrown weapon you touch, add your spellcasing modifier to the dice roll, if the new roll is over 20 is a crit. Spell ends after an attack is made with the projectile", 
-	descriptionFull : "You touch a piece of ammunition or weapon with the thrown property imbuing it with the property of seeking its target. When an ranged attack roll is made with that weapon, the attack roll can add your spell casting modifier to the value on the dice. If that makes the value on the die a 20 or more, the attack is a critical hit as if a 20 was rolled. After making the attack roll, the spell ends."
+	descriptionFull : "You touch a piece of ammunition or weapon with the thrown property imbuing it with the property of seeking its target. When an ranged attack roll is made with that weapon, the attack roll can add your spell casting modifier to the value on the dice. If that makes the value on the die a 20 or more, the attack is a critical hit as if a 20 was rolled. After making the attack roll, the spell ends.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
@@ -150,7 +150,7 @@ SpellsList["unburden"] = {
 	duration : "1 hour", 
 	description : "Target no longer affected by movement or stealth penalties from heavy armor, and can carry twice their normal weight before encumbrance.",
 	descriptionMetric : "Target no longer affected by movement or stealth penalties from heavy armor, and can carry twice their normal weight before encumbrance.", 
-	descriptionFull : "A creature you touch no longer suffers the penalties to movement speed or to their Dexterity (Stealth) checks while wearing heavy armor, and is no long encumbered from carry weight unless they are carrying more than twice the weight that would encumber them."
+	descriptionFull : "A creature you touch no longer suffers the penalties to movement speed or to their Dexterity (Stealth) checks while wearing heavy armor, and is no long encumbered from carry weight unless they are carrying more than twice the weight that would encumber them.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
@@ -169,7 +169,7 @@ SpellsList["imbue luck"] = {
 	duration : "1 hour", 
 	description : "A weapon or worn item is imbued with luck.If it is a weapon, the user can roll a second attack dice and choose which to use. If it is an item, the user can roll a second dice when hit and choose which dice the attack used.",
 	descriptionMetric : "A weapon or worn item is imbued with luck.If it is a weapon, the user can roll a second attack dice and choose which to use. If it is an item, the user can roll a second dice when hit and choose which dice the attack used.", 
-	descriptionFull : "You touch a weapon or worn item and imbue luck into it. If imbued on a weapon, for the duration, on an attack roll, the wielder can roll an additional d20 (they can choose to do this after they roll, but before the outcome is determined). The creature can choose which of the d20s is used for the attack roll."+"\n"+"If imbued into a worn item, they can roll a d20 when attacked, then choose whether the attack uses the attacker's roll or theirs."+"\n"+"With either use, the spell immediately ends upon rolling the extra d20."
+	descriptionFull : "You touch a weapon or worn item and imbue luck into it. If imbued on a weapon, for the duration, on an attack roll, the wielder can roll an additional d20 (they can choose to do this after they roll, but before the outcome is determined). The creature can choose which of the d20s is used for the attack roll."+"\n"+"If imbued into a worn item, they can roll a d20 when attacked, then choose whether the attack uses the attacker's roll or theirs."+"\n"+"With either use, the spell immediately ends upon rolling the extra d20.",
 	ritual : false, //Optional; Whether (true) or not (false) this spell is a ritual
 	dependencies : [], //Optional; An array of spells (SpellsList object names) that will be put in the rows below this spell when this spell is added to the spell sheet
 };
